@@ -1,0 +1,72 @@
+﻿# ======================================================================================
+# Fused High-Fidelity Input State for the Study (Configuration File)
+# "Cryptocurrencies and Interest Rates: Inferring Yield Curves in a Bondless Market"
+#
+# This YAML file contains the metadata and non-data hyperparameters required for
+# a single execution of the estimation pipeline. It is designed to be loaded
+# by the main execution script.
+# ======================================================================================
+
+# ----------------------------------------------------------------------------------
+# METADATA: Contextual information about this specific data snapshot.
+# ----------------------------------------------------------------------------------
+metadata:
+  # The cryptocurrency asset being analyzed.
+  # Data Type: String
+  # Valid Values: 'BTC', 'ETH'
+  asset: 'BTC'
+
+  # Documents the provenance of the market data, which is critical for
+  # understanding potential platform-specific biases.
+  # Data Type: String
+  data_source: 'Deribit via CoinMetrics'
+
+# ----------------------------------------------------------------------------------
+# HYPERPARAMETERS: The complete set of non-data, researcher-defined parameters
+# that control the behavior of the algorithms.
+# ----------------------------------------------------------------------------------
+hyperparameters:
+  # Source: Section 4.2 "Data Trimming".
+  # Quote: "First, options with maturities of less than one month are excluded."
+  # Data Type: Integer
+  maturity_filter_days: 30
+
+  # Source: Implied by Section 4.2 "Data Trimming".
+  # Quote: "Second, we exclude data points with excessive bid-ask spreads..."
+  # Note: The paper does not specify the value; this is a required parameter for replication.
+  # Data Type: Float
+  liquidity_filter_spread_pct: 0.15
+
+  # Source: Section 4.2 "Data Trimming".
+  # Quote: "...using a residual squared threshold of 0.004 to classify individual points..."
+  # Data Type: Float
+  ransac_residual_sq_threshold: 0.004
+
+  # Source: Section 4.2 "Data Trimming".
+  # Quote: "...and a tolerance threshold of 10% for ξ_t."
+  # Data Type: Float
+  ransac_slope_tolerance_pct: 0.10
+
+  # Source: Standard implementation detail for RANSAC when fitting a linear model.
+  # Data Type: Integer
+  ransac_min_sample_size: 2
+
+  # Source: Standard implementation practice for RANSAC (value not specified in paper).
+  # Data Type: Integer
+  ransac_num_iterations: 100
+
+  # Source: Implied by Section 3.3, Equation (3) (value not specified in paper).
+  # Data Type: Float
+  estimation_lambda_weight: 1.0
+
+  # Source: Standard financial practice to account for leap years.
+  # Data Type: Float
+  annualization_factor: 365.25
+
+  # Source: Section 4.3.2 "Implied Yield Curves Through Time".
+  # Quote: "...for three tenors: 90 days, 180 days, and 360 days."
+  # Data Type: List of Integers
+  target_tenors_days:
+    - 90
+    - 180
+    - 360
