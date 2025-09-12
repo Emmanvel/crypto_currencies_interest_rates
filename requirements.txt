@@ -1,0 +1,155 @@
+﻿# ==============================================================================#
+# requirements.txt
+# 
+# Production-grade dependency specification for:
+# "Cryptocurrencies and Interest Rates: Inferring Yield Curves in a Bondless Market"
+# 
+# This file specifies exact and compatible versions for all external dependencies
+# required for the robust implementation of the cryptocurrency yield curve 
+# construction framework. Version pinning ensures reproducible builds across
+# development, testing, and production environments.
+# 
+# Installation: pip install -r requirements.txt
+# Python Version: >=3.8 (required for advanced type hints and statistical libraries)
+# ==============================================================================#
+
+# --- Core Numerical Computing Stack ---
+# NumPy: Fundamental package for scientific computing with Python
+# - Required for array operations, linear algebra, and mathematical functions
+# - Version 1.24.3 provides stable API with optimal performance for financial computations
+numpy==1.24.3
+
+# Pandas: Powerful data manipulation and analysis library  
+# - Essential for time-series data handling, DataFrame operations, and data validation
+# - Version 2.0.3 includes critical performance improvements and type checking enhancements
+pandas==2.0.3
+
+# SciPy: Scientific computing library built on NumPy
+# - Required for advanced statistical functions, optimization, and numerical methods
+# - Provides robust implementations of interpolation and statistical tests
+scipy~=1.11.0
+
+# --- Statistical and Econometric Analysis ---
+# Statsmodels: Statistical modeling and econometric analysis
+# - Critical for stationarity tests (Augmented Dickey-Fuller), cointegration analysis
+# - Provides advanced time-series analysis capabilities for yield curve validation
+statsmodels~=0.14.0
+
+# Scikit-learn: Machine learning library
+# - Required for RANSAC (Random Sample Consensus) algorithm implementation
+# - Provides robust statistical estimation techniques for outlier rejection
+scikit-learn~=1.3.0
+
+# --- Data Visualization and Reporting ---
+# Matplotlib: Comprehensive plotting library
+# - Essential for generating time-series plots, scatter plots, and yield curve visualizations
+# - Required for reproducing paper figures and diagnostic plots
+matplotlib~=3.7.0
+
+# Seaborn: Statistical data visualization based on matplotlib
+# - Provides enhanced statistical plotting capabilities and professional styling
+# - Streamlines creation of publication-quality financial charts
+seaborn~=0.12.0
+
+# --- Data Acquisition and API Integration ---
+# Requests: HTTP library for API interactions
+# - Required for programmatic access to CoinMetrics, DeFiLlama, and other data providers
+# - Handles authentication, rate limiting, and JSON response parsing
+requests~=2.31.0
+
+# urllib3: HTTP client library (explicit dependency for security)
+# - Ensures secure HTTPS connections for financial data APIs
+# - Version specification prevents security vulnerabilities
+urllib3>=1.26.0,<3.0.0
+
+# --- Data Storage and Serialization ---
+# PyArrow: Cross-language development platform for in-memory data
+# - Required for efficient Parquet file format support
+# - Critical for large-scale time-series data storage and retrieval
+pyarrow~=12.0.0
+
+# Openpyxl: Library for reading/writing Excel files
+# - Enables import/export of financial data in Excel format
+# - Useful for data validation and reporting workflows
+openpyxl~=3.1.0
+
+# --- Performance and Optimization ---
+# Numba: JIT compiler for numerical functions
+# - Optional but recommended for accelerating computationally intensive operations
+# - Particularly beneficial for bootstrap confidence interval calculations
+numba~=0.57.0
+
+# --- Development and Testing Dependencies ---
+# These are optional but recommended for development environments
+
+# pytest: Testing framework
+# - Essential for unit testing and integration testing of financial models
+# pytest>=7.4.0
+
+# pytest-cov: Coverage plugin for pytest  
+# - Ensures comprehensive test coverage of critical financial calculations
+# pytest-cov>=4.1.0
+
+# black: Code formatter
+# - Maintains PEP-8 compliance and consistent code style
+# black>=23.7.0
+
+# mypy: Static type checker
+# - Critical for type safety in financial calculations
+# mypy>=1.5.0
+
+# flake8: Linting tool
+# - Enforces code quality standards and catches potential errors
+# flake8>=6.0.0
+
+# --- Security and Compliance ---
+# cryptography: Cryptographic library
+# - Required for secure API authentication and data encryption
+cryptography>=41.0.0
+
+# certifi: Collection of Root Certificates
+# - Ensures secure SSL/TLS connections to financial data providers
+certifi>=2023.7.22
+
+# ==============================================================================#
+# Version Compatibility Notes:
+# 
+# 1. Python 3.8+ is required for:
+#    - Advanced type hints (Literal, TypedDict, Protocol)
+#    - Positional-only parameters in function definitions
+#    - Assignment expressions (walrus operator) for efficient data processing
+# 
+# 2. NumPy 1.24.3 is pinned for:
+#    - Stable API for financial computations
+#    - Optimal performance for large-scale array operations
+#    - Compatibility with all dependent libraries
+# 
+# 3. Pandas 2.0.3 includes:
+#    - Enhanced nullable integer arrays for financial data
+#    - Improved performance for time-series operations
+#    - Better memory efficiency for large datasets
+# 
+# 4. Version ranges (using ~=) allow:
+#    - Bug fixes and security updates
+#    - Maintenance of API compatibility
+#    - Prevention of breaking changes
+# 
+# ==============================================================================#
+
+# ==============================================================================#
+# Installation Instructions:
+# 
+# 1. Create a virtual environment:
+#    python -m venv crypto_yield_env
+#    source crypto_yield_env/bin/activate  # On Windows: crypto_yield_env\Scripts\activate
+# 
+# 2. Upgrade pip to latest version:
+#    python -m pip install --upgrade pip
+# 
+# 3. Install dependencies:
+#    pip install -r requirements.txt
+# 
+# 4. Verify installation:
+#    python -c "import numpy, pandas, scipy, statsmodels, sklearn; print('All dependencies loaded successfully')"
+# 
+# ==============================================================================#
